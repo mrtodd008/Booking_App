@@ -1,0 +1,34 @@
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        email:
+          type: string
+        role:
+          type: string
+          enum: [admin, DJ, user]
+        profilePicture:
+          type: string
+        bio:
+          type: string
+        socialLinks:
+          type: object
+          properties:
+            instagram:
+              type: string
+            twitter:
+              type: string
+            facebook:
+              type: string
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
